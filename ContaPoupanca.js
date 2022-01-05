@@ -12,4 +12,9 @@ export class ContaPoupanca extends Conta {
     this._cliente = cliente
     this._saldo = saldoInicial
   }
+
+  sacar(valor) {
+    const taxa = 1.02 //2%
+    return super._sacar(valor, taxa)
+  }
 }
